@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlists</title>
     <link rel="stylesheet" href="../styles/playlist.css">
+    <script src="../js/playlist.js"></script>
+    <script src="../js/invoke-time.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="sidebar">
         <nav>
-            <a class="home-arrow" href="../../index.html">
-                <img src="../static/Home.svg" alt="Home"/>
-            </a>
+            <a href="../../index.html">Главная</a>
 
             <a href="playlists.html" class="active">Плейлисты</a>
+            <a href="$">Исполнители</a>
+            <a href="$">Популярное</a>
+            <a href="$">Любимое</a>
         </nav>
     </div>
 
 
     <main>
+        <button class="sidebar-toggle" onclick="toggleSidebar()">Меню</button>
+        <div class="invoke-time" style="position: absolute; right: 0"></div>
         <header>
             <label>
                 <input type="text" placeholder="Search" style="border: none; padding: 3% 0 1%;">
@@ -148,10 +153,12 @@
             </div>
 
             <div class="now-playing">
-                <img src="../static/img.png" alt="Album Cover" class="album-cover">
                 <div class="track-info">
-                    <span class="track-title">Твой сладкий рот</span>
-                    <span class="track-artist">ЗоХа</span>
+                    <img src="../static/img.png" alt="Album Cover" class="album-cover">
+                    <div class="track-info-titles">
+                        <span class="track-title">Твой сладкий рот</span>
+                        <span class="track-artist">ЗоХа</span>
+                    </div>
                 </div>
                 <button class="like-btn"><img src="../static/star.svg" alt="Like"></button>
             </div>

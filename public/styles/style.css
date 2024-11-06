@@ -142,6 +142,10 @@ footer p {
     margin: 10px 0 0 0;
 }
 
+.invoke-time {
+    font-family: 'Montserrat', sans-serif;
+}
+
 @media (max-width: 650px) {
     nav a {
         display: none;
