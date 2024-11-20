@@ -162,7 +162,6 @@ label {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    transition: transform 0.5s ease;
 }
 
 .sidebar nav a {
@@ -432,4 +431,32 @@ footer {
     .now-playing {
         height: 15vw;
     }
+
+    #resultTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #292929;
+        color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #resultTable th, #resultTable td {
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 1px solid #444;
+    }
+
+    #resultTable th {
+        background-color: #1e1e1e;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #resultTable tr:hover {
+        background-color: #333;
+    }
+
 }

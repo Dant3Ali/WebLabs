@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlists constructor</title>
+    <script src="../js/playlist-constructor.js"></script>
+    <link rel="stylesheet" href="../styles/playlist-constructor-styles.css">
+</head>
+<body>
+<div class="container">
+    <main>
+
+        <h1>Конструктор плейлистов</h1>
+        <form id="playlistForm">
+            <label for="playlistName">Название плейлиста:</label>
+            <input type="text" id="playlistName" name="playlistName" required />
+
+            <label for="days">Количество дней:</label>
+            <select id="days" name="days">
+                <option value="5">5 дней</option>
+                <option value="6">6 дней</option>
+            </select>
+
+            <label for="tracksPerDay">Треков в день:</label>
+            <input type="number" id="tracksPerDay" name="tracksPerDay" min="1" max="10" value="5" />
+
+            <label for="genre">Жанр:</label>
+            <input type="text" id="genre" name="genre" placeholder="Например: Поп, Рок" />
+
+            <button type="submit">Создать плейлист</button>
+            <button type="button" id="saveSettings">Сохранить настройки</button>
+            <button type="button" id="loadSettings">Загрузить настройки</button>
+        </form>
+
+        <div id="resultContainer">
+            <h2>Результат:</h2>
+            <div id="playlistResult"></div>
+        </div>
+
+    </main>
+</div>
+</body>
+</html>
