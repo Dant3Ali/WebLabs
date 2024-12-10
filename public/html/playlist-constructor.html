@@ -33,6 +33,28 @@
             <button type="button" id="loadSettings">Загрузить настройки</button>
         </form>
 
+        <div id="songModal" class="modal">
+            <div class="modal-content">
+                <h2>Выберите песню</h2>
+                <div id="filterContainer">
+                    <form id="filterForm">
+                        <label for="filterName">Название песни:</label>
+                        <input type="text" id="filterName" name="filterName" placeholder="Введите название песни" />
+
+                        <label for="filterSinger">Исполнитель:</label>
+                        <input type="text" id="filterSinger" name="filterSinger" placeholder="Введите имя исполнителя" />
+
+                        <button type="submit">Применить фильтр</button>
+                    </form>
+                </div>
+
+                <ul id="songList"></ul>
+                <button id="closeModal">Закрыть</button>
+            </div>
+        </div>
+
+
+
         <div id="resultContainer">
             <h2>Результат:</h2>
             <div id="playlistResult"></div>

@@ -114,3 +114,110 @@ form button#loadSettings:hover {
     font-size: 14px;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.modal-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.modal-content ul li {
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #292929;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content ul li:hover {
+    background-color: #4caf50;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Стили таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #292929;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    background-color: #4caf50;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+table td:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+table .active {
+    background-color: #4caf50;
+    color: #000;
+}
+
+.modal-content form {
+    margin-bottom: 20px;
+}
+
+.modal-content form input {
+    margin: 0 10px 10px 0;
+    padding: 5px;
+}
+

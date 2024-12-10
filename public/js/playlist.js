@@ -1,5 +1,4 @@
 function toggleSidebar() {
-    // Переключаем класс 'open' у sidebar и 'active' у overlay
     document.querySelector('.sidebar').classList.toggle('open');
 }
 
